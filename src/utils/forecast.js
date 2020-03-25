@@ -9,7 +9,7 @@ const forecast = (latitude, longitude, callback) => {
     } else if (body.error) {
       callback('Unable to find location.', undefined)
     } else {
-      callback(undefined, body.daily.data[0].summary + ' 室外温度为 ' + body.currently.temperature + ' 摄氏度. 有 ' + body.currently.precipProbability + '% 的降雨概率.')
+      callback(undefined, body.daily.data[0].summary + ' 室外温度为 ' + body.currently.temperature + ' 摄氏度。有 ' + body.currently.precipProbability + '% 的降雨概率。')
     }
   })
 }
